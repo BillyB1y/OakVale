@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Groceries</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <!--Small image on tab -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!--href needs to know where the file is so its in css folder, and style.css-->
+  <script src="scripts/script.js"></script>
+  <script src="https://kit.fontawesome.com/57f4153752.js" crossorigin="anonymous"></script>
+  <!--Rescoure for icons-->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- -->
+</head>
+
+<body>
+
+  <div id="burgernav" class="overlay">
+    <a href="javascript:void(0)" class="closebutton" onclick="close_nav()">&times;</a>
+    <div class="overlaycontent">
+      <a href="index.html">Home</a>
+      <a href="groceries.html">Groceries</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About Us</a>
+    </div>
+  </div>
+  <header>
+    <h1>
+      <span id="burgermenu" onclick="open_nav()">&#9776;&nbsp;&nbsp;Oakvale Farm Co.</span></h1>
+  </header>
+
+
+  <header>
+    <ul class="nav">
+      <li class="logo">
+        <a href="index.html">OakVale</a>
+      </li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="groceries.html">Groceries</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+
+    </ul>
+  </header>
+
+
+  <div class="banner">
+    <img class="banner-image" src="images/Banner.png" alt="banner">
+
+  </div>
+  <div class="contact-text">
+    <h1>Contact Us!</h1>
+  </div>
+
+
+
+  <div class="contact-box">
+    <form>
+      <div class="row">
+        <div class="input-group">
+          <input type="text" id="name" required>
+          <label for="name"><i class="fa-solid fa-user"></i> Your Name</label>
+        </div>
+        <div class="input-group">
+          <input type="text" id="number" required>
+          <label for="number"><i class="fa-solid fa-phone"></i> Telephone</label>
+        </div>
+      </div>
+      <div class="input-group">
+        <input type="text" id="email" required>
+        <label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
+      </div>
+      <div class="input-group">
+        <textarea id="message" rows="8" required></textarea>
+        <label for="message"><i class="fa-solid fa-comment"></i> Your Feedback</label>
+      </div>
+      <button>SUBMIT</button>
+
+    </form>
+  </div>
+
+
+  <ul class="footer">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Groceries</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">About</a></li>
+  </ul>
+  <h5>© 2022 OakVale Farm. OakVale Farms is not responsible for the content of external sites</h5>
+</body>
+
+</html>
